@@ -17,10 +17,7 @@ class TaskController extends Controller
      */ 
     public function index() 
     {
-        // \Artisan::call('app:taskdelete');
-        // die;
         $tasks = Task::select('name','description','type')->paginate(10);
-        
         return response()->json(['success' => $tasks], $this-> successStatus); 
     }
     /** 
