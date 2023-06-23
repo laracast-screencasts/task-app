@@ -13,23 +13,23 @@ TaskApp Installation steps
 	
 		composer update
 
-    3. create .env file in main directery
+    3. create a .env file in the  main directory
         copy .env.example 
-        replace you DB configuration with current DB configuration in .env file
+        replace your DB configuration with the  current DB configuration in the  .env file
 
     4. Database Migrations
 	
     	php artisan migrate
 		
-	5. Link to storage folder
+	5. Link to a storage folder
 	
 		php artisan storage:link
 		
-	6. run project
+	6. run a project
         php artisan serve 
     
     7. Task Operation
-        All task operation run in Postman
+        All task operations run in Postman
 
         8.1 create task
         http://{your_url}/api/create - POST
